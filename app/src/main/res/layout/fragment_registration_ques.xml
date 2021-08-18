@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.RegistrationQues">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_backQuestion"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/backarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Donor Registration"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_reg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/donor_reg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/text_hi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_reg"
+            android:text="Hi there!\nSome questions regarding your health."
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:gravity="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_hi"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Are you feeling healthy and well"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/groupradio"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="88dp"
+                        android:layout_height="34dp"
+                        android:text="Yes"
+                        android:checked="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"/>
+
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="88dp"
+                        android:layout_height="34dp"
+                        android:button="@android:color/transparent"
+                        android:text="No"
+                        android:gravity="center"
+                        android:background="@drawable/radio_selector"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. Had a gastric upset, diarrhoea, abdominal\npain or vomiting"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <RadioGroup
+                    android:id="@+id/groupradio2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="88dp"
+                        android:layout_height="34dp"
+                        android:text="Yes"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"/>
+
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="88dp"
+                        android:layout_height="34dp"
+                        android:button="@android:color/transparent"
+                        android:text="No"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:background="@drawable/radio_selector"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. Do you have any of these disease in past 3 Months  ?"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood pressure issue"
+                            android:id="@+id/checkBox1" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diabetes"
+                            android:id="@+id/checkBox2"
+                            android:layout_below="@+id/checkBox1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Corona Virus"
+                            android:id="@+id/checkBox3" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Heart Disease"
+                            android:id="@+id/checkBox4"
+                            android:layout_below="@+id/checkBox1" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/et_contactus"
+                    android:layout_marginTop="10dp"
+                    android:hint="Others"
+                    android:gravity="top"
+                    android:paddingLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_registration_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/bt_submit"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

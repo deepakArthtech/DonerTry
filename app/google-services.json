@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "675024966516",
+    "project_id": "bloodforall-8aa09",
+    "storage_bucket": "bloodforall-8aa09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675024966516:android:0aaa9cfcd35a8afbd89221",
+        "android_client_info": {
+          "package_name": "com.ats.blooddoner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675024966516-ncjkl7lop9tulpgqajv8rsep2hc160ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpQVxCk_Bs-l51fS_WL-foZ3Ruuid839M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675024966516-ncjkl7lop9tulpgqajv8rsep2hc160ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675024966516:android:8b4fa227a6894570d89221",
+        "android_client_info": {
+          "package_name": "com.ats.blooddonor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675024966516-ncjkl7lop9tulpgqajv8rsep2hc160ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpQVxCk_Bs-l51fS_WL-foZ3Ruuid839M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675024966516-ncjkl7lop9tulpgqajv8rsep2hc160ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
